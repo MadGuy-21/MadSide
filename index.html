@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+        <title>Tim Berners-Lee</title>
+     
+</head>
+
+   
+
+
+
+<body>
+   
+    <h1><div></div class="ueberschrift5"><ul class="ueberschrift5">Tim Berners-Lee</ul></div><br><br><br><br><br><br><br><br><br></div></h1>
+
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="index.html">
+                 <span class="icon">
+                    <ion-icon name="home-outline"></ion-icon>
+                 </span> 
+                 <span class="text">Mainpage</span> 
+                </a>
+            </li>
+            <li class="list">
+                <a href="leben.html">
+                 <span class="icon"> 
+                     <ion-icon name="arrow-down-outline"></ion-icon>
+                 </span>
+                 <span class="text">Leben</span> 
+                </a>
+            </li>
+            <li class="list">
+                <a href="erfolge.html">
+                 <span class="icon"> 
+                     <ion-icon name="arrow-down-outline"></ion-icon>
+                 </span>
+                 <span class="text">Erfolge</span> 
+                </a>
+            </li>
+            <li class="list">
+                <a href="firmen.html">
+                 <span class="icon"> 
+                     <ion-icon name="arrow-down-outline"></ion-icon>
+                 </span>
+                 <span class="text">Firmen</span> 
+                </a>
+            </li>
+            <li class="list">
+                <a href="html.html">
+                 <span class="icon"> 
+                     <ion-icon name="arrow-down-outline"></ion-icon>
+                 </span>
+                 <span class="text">html</span> 
+                </a>
+            </li>
+        <div class="indicator"></div>
+        </ul>
+    </div>
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item)=>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item)=> 
+        item.addEventListener('click',activeLink));
+
+    </script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
